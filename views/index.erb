@@ -1,4 +1,4 @@
-<h2>There are <%=@contact_list.count%> contacts</h2>
+<h2>There are <span><%=@contact_list.count%></span> contacts</h2>
 <%@contact_list.each do |contact|%>
 	<span class = "contacts">
 		<%= contact.full_name %> 
