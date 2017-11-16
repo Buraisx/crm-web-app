@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contacts</title>
+	</head>
+	<body>
+		<%@contact_list.each do |contact|%>
+			<p>ID: <%= contact.id%></p>
+			<p>NAME: <%= contact.full_name%></p>
+			<p>EMAIL: <%= contact.email%></p>
+			<p>NOTE: <%= contact.note%></p>
+			<p>-------------------------------</p>
+		<%end%>
+		<a href = "/">back to home</a>
+	</body>
+</html>
