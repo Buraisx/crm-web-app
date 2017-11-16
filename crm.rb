@@ -7,8 +7,13 @@ get '/' do
 end
 
 get '/contacts/:id' do
-	@contact = Contact.find_by(params[:id].to_i)
-	erb :show_contact
+	@contact = Contact.find_by(id: params[:id].to_i)
+	if @contact
+		erb :show_contact
+	else
+		raise Sinatra::NotFound
+	end
+	
 end
 
 get '/about' do
