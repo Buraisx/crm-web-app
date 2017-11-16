@@ -1,0 +1,57 @@
+body{
+	margin:0;
+	font-family: 'roboto',sans-serif;
+}
+h1,ul,footer{
+	color:white;
+	margin:0px;
+	padding-left:0px;
+}
+h1,footer{
+	padding:8px 0px;
+	text-align:center;
+	background-color:black;
+}
+
+	
+ul>li{
+	margin:1px;
+	padding:0.5em;
+	list-style-type: none;
+	text-align:center;
+	background-color:#D3D3D3;
+}
+
+li>a{
+	text-decoration:none;
+	color:white;
+}
+
+h2{
+	padding-top:0.5em;
+	padding-bottom: 0.5em;
+	padding-left:0.5em;
+	background-color:#EF8774;
+	width:90%;
+	margin:0.5em auto;
+}
+
+.contacts{
+	display:block;
+	width:90%;
+	margin:0.5em auto;
+	background-color:#67DDD0;
+	padding: 1em 0 1em 1em;
+	font-weight:bolder;
+	font-size:20px;
+}
+.contacts > .options{
+	display:block;
+
+}
+footer{
+	padding:1em 0;
+}
+footer > span{
+	bottom:0px;
+}

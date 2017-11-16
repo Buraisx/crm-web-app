@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Homepage</title>
-	</head>
-	<body>
-		<h1>Welcome to My CRM</h1>
-	</body>
-</html>
+<h2>There are <%=@contact_list.count%> contacts</h2>
+<%@contact_list.each do |contact|%>
+	<span class = "contacts">
+		<%= contact.full_name %> 
+		(<%= contact.email%>)
+		<span class = "options"><a href="/">Edit</a> | <a href="/">Delete</a></span>
+	</span>
+<%end%>
