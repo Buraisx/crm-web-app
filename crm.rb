@@ -6,8 +6,8 @@ get '/' do
 	erb :index
 end
 
-get '/contacts' do
-	erb :contacts
+get '/contacts/:id' do
+	erb :show_contact
 end
 
 get '/about' do

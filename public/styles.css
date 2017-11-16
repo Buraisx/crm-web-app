@@ -51,8 +51,8 @@ h2>span{
 
 }
 footer{
-	padding:1em 0;
-}
-footer > span{
+	width:100%;
 	bottom:0px;
+	position:absolute; 
+	padding:1em 0;
 }
