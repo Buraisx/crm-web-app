@@ -1,9 +1,15 @@
 <h2>There are <span><%=@contact_list.count%></span> contacts</h2>
 <%@contact_list.each do |contact|%>
+<form action="/contacts/<%= contact.id %>" method="post">
+	<input type="hidden" name="_method" value = "delete">
 	<span class = "contacts">
 		<%= contact.full_name %> 
 		(<%= contact.email%>)
 		<a href="/contacts/<%= contact.id%>">View</a>
-		<span class = "options"><a href="/contacts/<%= contact.id%>/edit">Edit</a> | <a href="/contacts/<%= contact.id%">Delete</a></span>
+		<span class = "options"><a href="/contacts/<%= contact.id%>/edit">Edit</a> | <input type="submit" value="Delete"></span>
 	</span>
+	
+</form>
 <%end%>
+
+

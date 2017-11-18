@@ -19,9 +19,10 @@ post '/contacts' do
   )
 	  redirect to('/')
 end
-
+# SHOW CONTACTS
 get '/contacts/:id' do
 	@contact = Contact.find_by(id: params[:id].to_i)
+	puts @contact.id
 	if @contact
 		erb :show_contact
 	else
@@ -57,7 +58,7 @@ end
 
 # DELETE REQUEST HANDLER
 delete '/contacts/:id' do
-  @contact = Contact.find_by(params[:id].to_i)
+  @contact = Contact.find_by(id: params[:id].to_i)
   if @contact
     @contact.delete
     redirect to('/')
