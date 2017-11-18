@@ -4,6 +4,6 @@
 		<%= contact.full_name %> 
 		(<%= contact.email%>)
 		<a href="/contacts/<%= contact.id%>">View</a>
-		<span class = "options"><a href="/">Edit</a> | <a href="/">Delete</a></span>
+		<span class = "options"><a href="/contacts/<%= contact.id%>/edit">Edit</a> | <a href="/contacts/<%= contact.id%">Delete</a></span>
 	</span>
 <%end%>
